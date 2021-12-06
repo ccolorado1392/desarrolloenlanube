@@ -12,10 +12,7 @@ app = Flask(__name__)
 app_context = app.app_context()
 app_context.push()
 
-if app.config['ENV'] == 'production':
-    app.config.from_object('config.ProductionConfig')
-else:
-    app.config.from_object('config.DevelopmentConfig')
+app.config.from_object('config.ProductionConfig')
 
 if __name__ == '__main__':
     app.run()
