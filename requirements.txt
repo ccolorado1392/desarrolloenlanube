@@ -57,3 +57,4 @@ virtualenv==20.7.2
 wcwidth==0.2.5
 Werkzeug==2.0.1
 wrapt==1.12.1
+gunicorn==20.1.0
