@@ -8,7 +8,7 @@ class Config(object):
 
 class ProductionConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:postgres@localhost:5432/prod'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:postgres@prod.cvnfbhghkbwy.us-east-1.rds.amazonaws.com:5432/prod'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 class DevelopmentConfig(Config):
